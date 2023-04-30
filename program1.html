@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Program 1</title>
+    <style>
+		body {
+			background: linear-gradient(135deg, #0A0A0A, #1A2134, #0D1D4B);
+			color: #fff;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		nav {
+  background-color: #2d98a7;
+  color: #fff;
+  display: flex;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  padding: 10px;
+}
+  
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-right: 30px;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+		.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 30px;
+	padding: 10px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+		.container > div {
+			background-color: #137676;
+			padding: 10px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(158, 134, 134, 0.3);
+			overflow: hidden;
+			text-align: center;
+			position: relative;
+			margin-left: 10px;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 50px;
+		}
+		.container > div:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(255, 255, 255, 0.05);
+			transform: scale(0);
+			transition: transform 0.3s ease-in-out;
+		}
+		.container > div:hover:before {
+			transform: scale(1);
+		}
+		h1, h2, h3, h4, h5 {
+			line-height: 1.2;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 4rem;
+		}
+		h2 {
+			font-size: 3rem;
+		}
+		h3 {
+			font-size: 1.6rem;
+		}
+		h4 {
+			font-size: 1.3rem;
+		}
+		header{
+
+			height:10vh;
+		}
+		header h1{
+			margin-top: 100px;
+			text-align: center;
+			font-size: 2rem;
+		}
+		button {
+  background-color: #dc2f1f;
+  border: none;
+  color: #f6eded;
+  padding: 13px 10px;
+  font-size: 23px;
+  font-weight: bold;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(158, 134, 134, 0.3);
+  transition: all 0.3s ease;
+  width: 200px;
+  display: block; /* make the button a block-level element */
+  margin: 0 auto;
+  margin-top: -40px;
+  
+}
+button a {
+  color: #ede9e9;
+  text-decoration: none;
+}
+button:hover {
+  background-color: #2f4545;
+  cursor: pointer;
+}
+
+.loc{
+	margin: 0;
+}
+
+.loc h2{
+margin-left: 40px;
+margin-top: 100px;
+margin-bottom: 20px;
+}
+.container h4{
+	margin-top: 20px;
+}
+
+.log a{
+	font-size: 2rem;
+    font-weight: 700;
+    color: white;
+	text-align: left;
+	margin-right: 900px;
+}
+	</style>
+</head>
+<body>
+
+	<nav>
+		<div class="log">
+		<a href="index.html" class="logo">IEEE </a>
+	</div>
+		<ul>
+			
+		  <li><a href="index.html">Home</a></li>
+		  <li><a href="conference program.html">Conference</a></li>
+		  <li><a href="about.html">About</a></li>
+		 
+		</ul>
+	  </nav>
+
+	<header>
+		<h1> International Conference on Engineering and Technologies</h1>
+        
+       
+
+	</header>
+	
+	<main>
+		<div class="container" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto;">
+			<div style="grid-area: 1 / 1 / 2 / 4;">
+				<h2>Date: 1st August 2023</h2>
+				<h4>Day 1</h4>
+			</div>
+			<div style="grid-area: 2 / 1;">
+				<h3>Technical Session 1</h3>
+				<p>Blockchain and Cryptocurrencies</p>
+				<p>Speaker: John Smith</p>
+				<p>Time:9:00 PM to 12:00PM</p>
+			</div>
+			<div style="grid-area: 2 / 2;">
+				<h3>Technical Session 2</h3>
+				<p>Sustainable Materials and Manufacturing</p>
+				<p>Speaker: Jane Doe</p>
+				<p>Time:13:00 PM to 2:00PM</p>
+			</div>
+			
+
+
+			<div style="grid-area: 2 / 3;">
+				<h3>Technical Session 3</h3>
+				<p>Quantum Computing and Applications</p>
+				<p>Speaker:James Wang</p>
+				<p>Time: 2:00 PM to 4:30 PM</p>
+			</div>
+			<button><a href="form.html">Register Now</a></button>
+				
+	
+		</div>
+
+
+
+
+		<div class="container" style="display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: auto;">
+			<div style="grid-area: 1 / 1 / 2 / 4;">
+				<h2>Date: 2nd August 2023</h2>
+				<p>Day 2</p>
+			</div>
+			<div style="grid-area: 2 / 1;">
+				<h3>Technical Session 1</h3>
+				<p>Cybersecurity Trends and Challenges</p>
+				<p>Speaker: Sarah Jones</p>
+				<p>Time:9:00 PM to 12:00PM</p>
+			</div>
+			<div style="grid-area: 2 / 2;">
+				<h3>Technical Session 2</h3>
+				<p>Next Generation Networking Technologies</p>
+				<p>Speaker:Lisa Chen</p>
+				<p>Time:12:00 PM to 2:00 PM</p>
+			</div>
+			
+
+
+			<div style="grid-area: 2 / 3;">
+				<h3>Technical Session 3</h3>
+				<p>Smart Cities and Urban Development"</p>
+				<p>Speaker: Jane Doe</p>
+				<p>Time:2:00 PM to 4:30 PM</p>
+			</div>
+			<button> <a href="form.html">Register Now</a></button>
+				
+	
+		</div>
+		<div class="loc">
+			<h2>Location</h2>
+			<iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.02828216552736%2C40.6840822192281%2C-73.96236419677736%2C40.72820674733745&amp;layer=mapnik"></iframe>
+		</div>
